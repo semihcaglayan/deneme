@@ -23,9 +23,11 @@
             -webkit-user-drag: none;
             -webkit-tap-highlight-color: transparent;
             outline: none;
+            object-fit: cover;
+            transition: all 0.3s ease-in-out;
         }
 
-        p {
+        a {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -40,11 +42,24 @@
             -webkit-user-drag: none;
             -webkit-tap-highlight-color: transparent;
             outline: none;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        a:hover + img{
+            filter: brightness(0.9);
         }
     </style>
 </head>
 <body style="position: relative; height: 100vh;">
-    <p>Sürekli Dizi</p>
+    <a href="index.html">Sürekli Dizi</a>
       <img src="images/Mordecai_y_Rigby_diciendo_Ohhhhh.jpg">
 </body>
 </html>
